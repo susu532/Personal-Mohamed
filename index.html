@@ -273,10 +273,10 @@
 		toggleButton.addEventListener('click', () => {
 			if (audio.paused) {
 				audio.play();
-				toggleButton.textContent = 'Pause Rain';
+				toggleButton.innerHTML = '<img src="assets/img/icons/rain-icon.png" alt="Rain Icon" style="width: 20px; height: 20px; margin-right: 8px;"> Pause Rain';
 			} else {
 				audio.pause();
-				toggleButton.textContent = 'Resume Rain';
+				toggleButton.innerHTML = '<img src="assets/img/icons/rain-icon.png" alt="Rain Icon" style="width: 20px; height: 20px; margin-right: 8px;"> Resume Rain';
 			}
 		});
 	</script>
