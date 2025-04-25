@@ -266,6 +266,19 @@
 			audio.volume = 0.3; // Set volume to 30%
 			audio.play();
 		}, { once: true });
+
+		// Toggle audio playback
+		const toggleButton = document.getElementById('toggle-audio');
+		const audio = document.getElementById('background-audio');
+		toggleButton.addEventListener('click', () => {
+			if (audio.paused) {
+				audio.play();
+				toggleButton.textContent = 'Pause Rain';
+			} else {
+				audio.pause();
+				toggleButton.textContent = 'Resume Rain';
+			}
+		});
 	</script>
 
 
